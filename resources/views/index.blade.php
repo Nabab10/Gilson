@@ -33,6 +33,8 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+
+   
 </head>
 
 <body>
@@ -242,6 +244,8 @@
     </div>
 </div>
 <!-- FAQ End -->
+
+@include('whatsapp')
     
 
 

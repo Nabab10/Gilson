@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Finanza - Financial Services Website Template</title>
+    <title>Nabab - CV</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -48,7 +48,29 @@
         <div class="top-bar row gx-0 align-items-center d-none d-lg-flex">
             <div class="col-lg-6 px-5 text-start">
                 <small><i class="fa fa-map-marker-alt text-primary me-2"></i>Abomey-Calavi, Bénin</small>
-                <small class="ms-4"><i class="fa fa-clock text-primary me-2"></i>9.00 am - 9.00 pm</small>
+                <small class="ms-4">
+    <i class="fa fa-clock text-primary me-2"></i>
+    <span id="time-display"></span>
+</small>
+<script>
+function updateTime() {
+    const now = new Date();
+
+    let gmtHours = now.getUTCHours();
+    let minutes = now.getUTCMinutes();
+
+    let gmt1Hours = (gmtHours + 1) % 24;
+
+    minutes = minutes < 10 ? "0" + minutes : minutes;
+
+    const text = gmtHours + ":" + minutes + " GMT | " + gmt1Hours + ":" + minutes + " GMT+1";
+
+    document.getElementById("time-display").textContent = text;
+}
+
+updateTime();
+setInterval(updateTime, 1000);
+</script>
             </div>
             <div class="col-lg-6 px-5 text-end">
                 <small><i class="fa fa-envelope text-primary me-2"></i>gilleszinsou529@gmail.com</small>
@@ -74,13 +96,13 @@
                     <a href="{{ route('contact') }}" class="nav-item nav-link ">Contact</a>
                 </div>
                 <div class="d-none d-lg-flex ms-2">
-                    <a class="btn btn-light btn-sm-square rounded-circle ms-3" href="">
+                    <a class="btn btn-light btn-sm-square rounded-circle ms-3" href="https://www.facebook.com/gilles.gilson.zinsou.2025#">
                         <small class="fab fa-facebook-f text-primary"></small>
                     </a>
                     <a class="btn btn-light btn-sm-square rounded-circle ms-3" href="">
                         <small class="fab fa-twitter text-primary"></small>
                     </a>
-                    <a class="btn btn-light btn-sm-square rounded-circle ms-3" href="">
+                    <a class="btn btn-light btn-sm-square rounded-circle ms-3" href="www.linkedin.com/in/gilles-zinsou-775536385">
                         <small class="fab fa-linkedin-in text-primary"></small>
                     </a>
                 </div>
@@ -216,6 +238,7 @@
 
 
     @include('autre.cv.index')
+    @include('whatsapp')
 
     <!-- Footer Start -->
 <div class="container-fluid bg-dark text-light footer mt-5 py-5 wow fadeIn" data-wow-delay="0.1s">
