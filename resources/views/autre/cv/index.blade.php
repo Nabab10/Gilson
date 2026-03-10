@@ -455,6 +455,7 @@
 
     </div>
 
+
   </div>
 
 </section>
@@ -572,6 +573,12 @@
       </div>
 
     </div>
+    <!-- Bouton Voir plus -->
+<div class="text-center mt-4" data-aos="fade-up" data-aos-delay="300">
+  <a href="https://www.canva.com/design/DAHBMN3ZNBI/ZAy_rFyO_UjJuJhwXDCjfA/view?utm_content=DAHBMN3ZNBI&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hb9a140ea6a" class="btn btn-primary">
+    Voir plus
+  </a>
+</div>
 
   </div>
 

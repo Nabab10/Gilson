@@ -139,10 +139,10 @@
               </div>
 
               <div class="hero-actions" data-aos="fade-right" data-aos-delay="600">
-                <a href="appointment.html" class="btn btn-primary"> <i class="bi bi-play-circle me-2"></i>Mon Portfolio</a>
-                <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8" class="btn btn-outline glightbox">
+                <a href="#" class="btn btn-primary"> <i class="bi bi-play-circle me-2"></i>En savoir plus</a>
+                <a href="video/MON PORTFOLIO.mp4" class="btn btn-outline glightbox">
                   <i class="bi bi-play-circle me-2"></i>
-                  En savoir plus
+                  Mon Portfolio
                 </a>
               </div>
 
